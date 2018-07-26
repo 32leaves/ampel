@@ -1,0 +1,10 @@
+ports:
+  - port: 8080
+    protocol: "http"
+checkoutLocation: "src/github.com/32leaves/ampel"
+workspaceLocation: "."
+tasks:
+  - command: >
+      cd /workspace/src/github.com/32leaves/ampel &&
+      go get -v ./... &&
+      go build -o ampel
